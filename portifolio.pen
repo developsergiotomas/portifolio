@@ -1,0 +1,279 @@
+{
+  "version": "2.20",
+  "children": [
+    {
+      "type": "frame",
+      "id": "wLhMf",
+      "x": 0,
+      "y": 0,
+      "name": "Portfolio — Desktop",
+      "clip": true,
+      "width": 1440,
+      "fill": "$bg",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "pRIJV",
+          "name": "Nav",
+          "width": "fill_container",
+          "stroke": "$line",
+          "strokeWidth": {
+            "bottom": 1
+          },
+          "padding": [
+            24,
+            80
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "z0i5V",
+              "name": "Brand",
+              "gap": 10,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "rectangle",
+                  "id": "J7UfL",
+                  "name": "Mark",
+                  "fill": "$accent",
+                  "width": 10,
+                  "height": 10
+                },
+                {
+                  "type": "text",
+                  "id": "hjkyj",
+                  "name": "Brand Name",
+                  "fill": "$fg",
+                  "content": "SERGIO TOMAS",
+                  "fontFamily": "$font-head",
+                  "fontSize": 16,
+                  "fontWeight": "700",
+                  "letterSpacing": 2
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "aLaJG",
+              "name": "Links",
+              "gap": 40,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "FI4kI",
+                  "name": "Link About",
+                  "gap": 6,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "aCY3k",
+                      "name": "Index",
+                      "fill": "$fg-3",
+                      "content": "01",
+                      "fontFamily": "$font-mono",
+                      "fontSize": 11,
+                      "fontWeight": "normal",
+                      "letterSpacing": 1
+                    },
+                    {
+                      "type": "text",
+                      "id": "AyFDA",
+                      "name": "Label",
+                      "fill": "$fg-2",
+                      "content": "About",
+                      "fontFamily": "$font-body",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "JG6jM",
+                  "name": "Link Experience",
+                  "gap": 6,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "g9XbB",
+                      "name": "Index",
+                      "fill": "$fg-3",
+                      "content": "02",
+                      "fontFamily": "$font-mono",
+                      "fontSize": 11,
+                      "fontWeight": "normal",
+                      "letterSpacing": 1
+                    },
+                    {
+                      "type": "text",
+                      "id": "u4E8j",
+                      "name": "Label",
+                      "fill": "$fg-2",
+                      "content": "Experience",
+                      "fontFamily": "$font-body",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "LIv2b",
+                  "name": "Link Skills",
+                  "gap": 6,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Mqoi2",
+                      "name": "Index",
+                      "fill": "$fg-3",
+                      "content": "03",
+                      "fontFamily": "$font-mono",
+                      "fontSize": 11,
+                      "fontWeight": "normal",
+                      "letterSpacing": 1
+                    },
+                    {
+                      "type": "text",
+                      "id": "HhZ87",
+                      "name": "Label",
+                      "fill": "$fg-2",
+                      "content": "Skills",
+                      "fontFamily": "$font-body",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "GPiC6",
+                  "name": "Link Contact",
+                  "gap": 6,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "HVYKZ",
+                      "name": "Index",
+                      "fill": "$fg-3",
+                      "content": "04",
+                      "fontFamily": "$font-mono",
+                      "fontSize": 11,
+                      "fontWeight": "normal",
+                      "letterSpacing": 1
+                    },
+                    {
+                      "type": "text",
+                      "id": "w0xtvK",
+                      "name": "Label",
+                      "fill": "$fg-2",
+                      "content": "Contact",
+                      "fontFamily": "$font-body",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "wPL56",
+              "name": "Nav CTA",
+              "stroke": "$fg",
+              "strokeWidth": 1,
+              "gap": 8,
+              "padding": [
+                10,
+                18
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "ASRBd",
+                  "name": "Label",
+                  "fill": "$fg",
+                  "content": "Get in touch",
+                  "fontFamily": "$font-body",
+                  "fontSize": 14,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "icon",
+                  "id": "RWEMg",
+                  "name": "Arrow",
+                  "width": 16,
+                  "height": 16,
+                  "icon": "arrow-up-right",
+                  "library": "lucide",
+                  "fill": "$fg"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "variables": {
+    "bg": {
+      "type": "color",
+      "value": "#0B0F14"
+    },
+    "bg-raised": {
+      "type": "color",
+      "value": "#121820"
+    },
+    "line": {
+      "type": "color",
+      "value": "#222B36"
+    },
+    "line-strong": {
+      "type": "color",
+      "value": "#3A4654"
+    },
+    "fg": {
+      "type": "color",
+      "value": "#F2F5F8"
+    },
+    "fg-2": {
+      "type": "color",
+      "value": "#A7B1BD"
+    },
+    "fg-3": {
+      "type": "color",
+      "value": "#6B7684"
+    },
+    "accent": {
+      "type": "color",
+      "value": "#5AB4FF"
+    },
+    "accent-ink": {
+      "type": "color",
+      "value": "#06121F"
+    },
+    "font-head": {
+      "type": "string",
+      "value": "Space Grotesk"
+    },
+    "font-body": {
+      "type": "string",
+      "value": "Inter"
+    },
+    "font-mono": {
+      "type": "string",
+      "value": "Geist Mono"
+    }
+  },
+  "fileToken": "f29588d0-9751-486c-b75e-1e117634b945"
+}
