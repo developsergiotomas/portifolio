@@ -1,0 +1,1160 @@
+{
+  "categories": {
+    "language": { "en": "Language", "pt": "Linguagem" },
+    "frontend": { "en": "Front-end", "pt": "Front-end" },
+    "backend": { "en": "Back-end & APIs", "pt": "Back-end & APIs" },
+    "data": { "en": "Databases", "pt": "Bancos de dados" },
+    "cloud": { "en": "Cloud & DevOps", "pt": "Cloud & DevOps" },
+    "ai": { "en": "AI Engineering", "pt": "AI Engineering" },
+    "web": { "en": "Web & Design", "pt": "Web & Design" }
+  },
+  "items": [
+    {
+      "slug": "javascript", "name": "JavaScript", "category": "language", "kind": "language",
+      "usedAt": ["Stellar Gaming", "DOMVS iT", "Claro", "Resource IT", "Tugarê", "Marvin"],
+      "related": ["react", "nodejs", "vuejs", "angular"],
+      "en": {
+        "tagline": "The language I have written every single year since 2012.",
+        "overview": "JavaScript is the runtime language of the web and, through Node.js, of the server. I use it from interactive iPad presentations to micro-frontend platforms and APIs — and I care about writing it in a way that teams can read, test and evolve.",
+        "concepts": [
+          ["Event loop & async", "How the call stack, task queues and microtasks interact — the base for Promises, async/await and non-blocking I/O."],
+          ["Closures & scope", "Lexical scope, closures and `this` binding — what makes modules, hooks and callbacks work."],
+          ["Prototypes & classes", "Prototype chain, class syntax as sugar, composition over inheritance."],
+          ["Modules", "ES modules, bundling, tree-shaking and code splitting for fast-loading apps."],
+          ["Immutability", "Spread, structural sharing and pure functions — essential for predictable state in React and Redux."],
+          ["Performance", "Avoiding layout thrashing, debouncing, memoization and profiling in DevTools."]
+        ],
+        "practice": "Core language across my whole career: Zepto.js presentations at Marvin and Tugarê, Angular apps at Resource IT, Vue and React at Claro, Next.js at DOMVS iT and full products at Stellar Gaming."
+      },
+      "pt": {
+        "tagline": "A linguagem que escrevo todos os anos desde 2012.",
+        "overview": "JavaScript é a linguagem de execução da web e, com Node.js, também do servidor. Uso desde apresentações interativas para iPad até plataformas de micro-frontends e APIs — sempre buscando um código que o time consiga ler, testar e evoluir.",
+        "concepts": [
+          ["Event loop e assincronia", "Como call stack, filas de tarefas e microtasks interagem — a base de Promises, async/await e I/O não bloqueante."],
+          ["Closures e escopo", "Escopo léxico, closures e o binding de `this` — o que faz módulos, hooks e callbacks funcionarem."],
+          ["Protótipos e classes", "Cadeia de protótipos, class como açúcar sintático, composição em vez de herança."],
+          ["Módulos", "ES modules, bundling, tree-shaking e code splitting para apps que carregam rápido."],
+          ["Imutabilidade", "Spread, compartilhamento estrutural e funções puras — essenciais para estado previsível em React e Redux."],
+          ["Performance", "Evitar layout thrashing, debounce, memoização e profiling no DevTools."]
+        ],
+        "practice": "Linguagem central em toda a minha carreira: apresentações com Zepto.js na Marvin e na Tugarê, apps Angular na Resource IT, Vue e React na Claro, Next.js na DOMVS iT e produtos completos na Stellar Gaming."
+      }
+    },
+    {
+      "slug": "java", "name": "Java", "category": "language", "kind": "language",
+      "usedAt": ["Resource IT"],
+      "related": ["spring", "oracle", "sqlserver"],
+      "en": {
+        "tagline": "Strongly typed back-ends built to last.",
+        "overview": "Java is the backbone of many enterprise systems. I use it for robust back-end services, usually with Spring, where typing, mature tooling and the JVM ecosystem pay off in reliability and maintainability.",
+        "concepts": [
+          ["OOP & SOLID", "Encapsulation, interfaces and SOLID principles to keep large codebases cohesive."],
+          ["Collections & generics", "Choosing the right List, Map or Set and writing type-safe generic code."],
+          ["Streams & lambdas", "Functional-style data processing introduced in Java 8 and beyond."],
+          ["Exceptions", "Checked vs unchecked exceptions and consistent error handling across layers."],
+          ["Concurrency", "Threads, executors and CompletableFuture for parallel and async work."],
+          ["JVM & build", "Memory model, garbage collection basics and build tools like Maven and Gradle."]
+        ],
+        "practice": "Built the back end of websites and web apps at Resource IT Solutions, integrated with WebCenter Sites as the CMS, and keep Java with Spring in my back-end toolkit."
+      },
+      "pt": {
+        "tagline": "Back-ends fortemente tipados, feitos para durar.",
+        "overview": "Java é a espinha dorsal de muitos sistemas corporativos. Uso para serviços de back-end robustos, geralmente com Spring, onde a tipagem, o ferramental maduro e o ecossistema da JVM se traduzem em confiabilidade e manutenibilidade.",
+        "concepts": [
+          ["OOP e SOLID", "Encapsulamento, interfaces e princípios SOLID para manter grandes bases de código coesas."],
+          ["Collections e generics", "Escolher a List, Map ou Set certa e escrever código genérico type-safe."],
+          ["Streams e lambdas", "Processamento de dados em estilo funcional, a partir do Java 8."],
+          ["Exceções", "Checked vs unchecked e tratamento de erros consistente entre camadas."],
+          ["Concorrência", "Threads, executors e CompletableFuture para trabalho paralelo e assíncrono."],
+          ["JVM e build", "Modelo de memória, noções de garbage collection e ferramentas como Maven e Gradle."]
+        ],
+        "practice": "Desenvolvi o back-end de sites e web apps na Resource IT Solutions, integrado ao WebCenter Sites como CMS, e mantenho Java com Spring no meu repertório de back-end."
+      }
+    },
+    {
+      "slug": "php", "name": "PHP", "category": "language", "kind": "language",
+      "usedAt": ["Tugarê"],
+      "related": ["mysql", "wordpress", "jquery"],
+      "en": {
+        "tagline": "Pragmatic server-side scripting for the web.",
+        "overview": "PHP powers a large share of the web, from CMSs to custom systems. I used it to deliver websites, hotsites and web systems quickly, usually paired with MySQL and WordPress.",
+        "concepts": [
+          ["Request lifecycle", "Each request runs a fresh script — understanding sessions, cookies and state."],
+          ["Composer & PSR", "Dependency management and the PSR standards for interoperable code."],
+          ["OOP & namespaces", "Classes, traits, interfaces and autoloading in modern PHP."],
+          ["Databases with PDO", "Prepared statements to prevent SQL injection and keep queries safe."],
+          ["Templating", "Separating logic from presentation in themes and views."],
+          ["Security basics", "Input validation, output escaping, CSRF and XSS prevention."]
+        ],
+        "practice": "Designed and built hotsites, websites and web systems at Tugarê | CDM São Paulo with PHP, MySQL, Bootstrap, jQuery and WordPress."
+      },
+      "pt": {
+        "tagline": "Scripting server-side pragmático para a web.",
+        "overview": "PHP move uma grande parte da web, de CMSs a sistemas sob medida. Usei para entregar sites, hotsites e sistemas web com agilidade, normalmente junto com MySQL e WordPress.",
+        "concepts": [
+          ["Ciclo da requisição", "Cada requisição executa um script novo — entender sessões, cookies e estado."],
+          ["Composer e PSR", "Gerenciamento de dependências e os padrões PSR para código interoperável."],
+          ["OOP e namespaces", "Classes, traits, interfaces e autoloading no PHP moderno."],
+          ["Banco com PDO", "Prepared statements para evitar SQL injection e manter as queries seguras."],
+          ["Templates", "Separar lógica de apresentação em temas e views."],
+          ["Segurança básica", "Validação de entrada, escape de saída, prevenção de CSRF e XSS."]
+        ],
+        "practice": "Projetei e construí hotsites, sites e sistemas web na Tugarê | CDM São Paulo com PHP, MySQL, Bootstrap, jQuery e WordPress."
+      }
+    },
+    {
+      "slug": "go", "name": "Go", "category": "language", "kind": "language",
+      "usedAt": [],
+      "related": ["nodejs", "aws", "gcp"],
+      "en": {
+        "tagline": "Simple, fast and built for concurrency.",
+        "overview": "Go is Google's language for simple, fast and concurrent services. I studied it formally to broaden my architectural options for high-throughput services and cloud-native tooling.",
+        "concepts": [
+          ["Simplicity by design", "Small language surface, explicit code and a strong standard library."],
+          ["Goroutines & channels", "Lightweight concurrency and communicating by sharing memory safely."],
+          ["Interfaces", "Implicit interfaces that enable composition and easy testing."],
+          ["Error handling", "Errors as values and explicit handling instead of exceptions."],
+          ["Modules & tooling", "go mod, go fmt, go test and fast static binaries."],
+          ["Cloud-native fit", "Why Go dominates tools like Docker and Kubernetes."]
+        ],
+        "practice": "Certified in “Go (Golang): Exploring Google's Language” — knowledge I bring to architecture discussions about performance-critical services."
+      },
+      "pt": {
+        "tagline": "Simples, rápida e feita para concorrência.",
+        "overview": "Go é a linguagem do Google para serviços simples, rápidos e concorrentes. Estudei formalmente para ampliar minhas opções de arquitetura em serviços de alto throughput e ferramentas cloud-native.",
+        "concepts": [
+          ["Simplicidade por design", "Linguagem enxuta, código explícito e uma biblioteca padrão forte."],
+          ["Goroutines e channels", "Concorrência leve e comunicação segura entre processos."],
+          ["Interfaces", "Interfaces implícitas que favorecem composição e testes simples."],
+          ["Tratamento de erros", "Erros como valores e tratamento explícito em vez de exceções."],
+          ["Módulos e ferramentas", "go mod, go fmt, go test e binários estáticos rápidos."],
+          ["Encaixe cloud-native", "Por que Go domina ferramentas como Docker e Kubernetes."]
+        ],
+        "practice": "Certificado em “Go (Golang): Exploring Google's Language” — conhecimento que levo para discussões de arquitetura sobre serviços críticos de performance."
+      }
+    },
+    {
+      "slug": "html5", "name": "HTML5", "category": "language", "kind": "language",
+      "usedAt": ["Stellar Gaming", "DOMVS iT", "Claro", "Resource IT", "Tugarê", "Marvin", "Atento"],
+      "related": ["css3", "javascript", "react"],
+      "en": {
+        "tagline": "Semantic, accessible and SEO-friendly markup.",
+        "overview": "HTML is where every interface starts. I treat markup as a product decision: semantics drive accessibility, SEO and maintainability long before any framework comes in.",
+        "concepts": [
+          ["Semantic elements", "header, nav, main, article, section — structure that machines and people understand."],
+          ["Accessibility", "Landmarks, labels, alt text, focus order and ARIA only when needed."],
+          ["SEO foundations", "Heading hierarchy, metadata, structured data and crawlable content."],
+          ["Forms", "Native validation, input types and accessible error messages."],
+          ["Media & performance", "Responsive images, lazy loading and preloading critical resources."],
+          ["Web APIs", "Storage, history, canvas and other platform features."]
+        ],
+        "practice": "From corporate intranet pages at Atento to high-traffic sites at Claro and DOMVS iT — always with semantics, accessibility and SEO in mind."
+      },
+      "pt": {
+        "tagline": "Markup semântico, acessível e amigável para SEO.",
+        "overview": "Toda interface começa no HTML. Trato markup como decisão de produto: a semântica define acessibilidade, SEO e manutenibilidade muito antes de qualquer framework entrar em cena.",
+        "concepts": [
+          ["Elementos semânticos", "header, nav, main, article, section — estrutura que máquinas e pessoas entendem."],
+          ["Acessibilidade", "Landmarks, labels, texto alternativo, ordem de foco e ARIA só quando necessário."],
+          ["Fundamentos de SEO", "Hierarquia de títulos, metadados, dados estruturados e conteúdo rastreável."],
+          ["Formulários", "Validação nativa, tipos de input e mensagens de erro acessíveis."],
+          ["Mídia e performance", "Imagens responsivas, lazy loading e preload de recursos críticos."],
+          ["Web APIs", "Storage, history, canvas e outros recursos da plataforma."]
+        ],
+        "practice": "De páginas de intranet na Atento a sites de alto tráfego na Claro e na DOMVS iT — sempre pensando em semântica, acessibilidade e SEO."
+      }
+    },
+    {
+      "slug": "css3", "name": "CSS3", "category": "language", "kind": "language",
+      "usedAt": ["Stellar Gaming", "DOMVS iT", "Claro", "Resource IT", "Tugarê", "Marvin", "Atento"],
+      "related": ["html5", "bootstrap", "react"],
+      "en": {
+        "tagline": "Layouts that adapt to every screen.",
+        "overview": "CSS turns structure into experience. I build responsive, maintainable styling systems with Flexbox and Grid, and scale them across teams through design systems.",
+        "concepts": [
+          ["Cascade & specificity", "How rules win, and how to keep specificity low and predictable."],
+          ["Box model", "Content, padding, border, margin and box-sizing."],
+          ["Flexbox & Grid", "One-dimensional and two-dimensional layout, and when to use each."],
+          ["Responsive design", "Mobile-first, media and container queries, fluid typography."],
+          ["Custom properties", "CSS variables as design tokens for theming."],
+          ["Animations", "Transitions, keyframes and performant transform/opacity animations."]
+        ],
+        "practice": "Responsive interfaces at every company I've worked for, the Claro rebranding rollout and contributions to the Mondrian design system."
+      },
+      "pt": {
+        "tagline": "Layouts que se adaptam a qualquer tela.",
+        "overview": "CSS transforma estrutura em experiência. Construo sistemas de estilo responsivos e fáceis de manter com Flexbox e Grid, e escalo isso entre times com design systems.",
+        "concepts": [
+          ["Cascata e especificidade", "Como as regras vencem e como manter a especificidade baixa e previsível."],
+          ["Box model", "Conteúdo, padding, borda, margem e box-sizing."],
+          ["Flexbox e Grid", "Layout em uma e em duas dimensões, e quando usar cada um."],
+          ["Design responsivo", "Mobile-first, media e container queries, tipografia fluida."],
+          ["Custom properties", "Variáveis CSS como design tokens para temas."],
+          ["Animações", "Transitions, keyframes e animações performáticas com transform/opacity."]
+        ],
+        "practice": "Interfaces responsivas em todas as empresas por onde passei, o rebranding do site da Claro e contribuições ao design system Mondrian."
+      }
+    },
+    {
+      "slug": "dotnet", "name": ".NET", "category": "language", "kind": "language",
+      "usedAt": ["Marvin"],
+      "related": ["sqlserver", "azure"],
+      "en": {
+        "tagline": "Microsoft's platform for enterprise applications.",
+        "overview": ".NET is Microsoft's platform for building enterprise web and desktop systems with C#. I worked with it maintaining legacy systems, which taught me how to evolve code safely without breaking critical operations.",
+        "concepts": [
+          ["C# fundamentals", "Strong typing, classes, LINQ and async/await."],
+          ["ASP.NET", "Request pipeline, controllers and views for web applications."],
+          ["Entity Framework", "ORM concepts, migrations and LINQ queries against SQL Server."],
+          ["Dependency injection", "Built-in DI container and loosely coupled services."],
+          [".NET Framework vs .NET", "Legacy framework versus modern cross-platform .NET."],
+          ["Legacy maintenance", "Refactoring safely, adding tests and reducing risk in old code."]
+        ],
+        "practice": "Maintained legacy front-end and back-end systems for the energy and pharmaceutical sectors at Marvin with .NET, SQL Server, Bootstrap and jQuery."
+      },
+      "pt": {
+        "tagline": "A plataforma da Microsoft para aplicações corporativas.",
+        "overview": ".NET é a plataforma da Microsoft para sistemas corporativos web e desktop com C#. Trabalhei com ela na manutenção de sistemas legados, o que me ensinou a evoluir código com segurança sem quebrar operações críticas.",
+        "concepts": [
+          ["Fundamentos de C#", "Tipagem forte, classes, LINQ e async/await."],
+          ["ASP.NET", "Pipeline de requisição, controllers e views para aplicações web."],
+          ["Entity Framework", "Conceitos de ORM, migrations e queries LINQ no SQL Server."],
+          ["Injeção de dependência", "Container de DI nativo e serviços desacoplados."],
+          [".NET Framework vs .NET", "O framework legado versus o .NET moderno multiplataforma."],
+          ["Manutenção de legado", "Refatorar com segurança, adicionar testes e reduzir risco em código antigo."]
+        ],
+        "practice": "Mantive sistemas legados de front-end e back-end dos setores de energia e farmacêutico na Marvin com .NET, SQL Server, Bootstrap e jQuery."
+      }
+    },
+    {
+      "slug": "graphql", "name": "GraphQL", "category": "language", "kind": "language",
+      "usedAt": [],
+      "related": ["nodejs", "nestjs", "react"],
+      "en": {
+        "tagline": "Ask for exactly the data you need.",
+        "overview": "GraphQL is a query language and runtime for APIs that lets clients request exactly the data they need. I use it with Node.js when multiple front-ends consume the same domain with different needs.",
+        "concepts": [
+          ["Schema & types", "SDL, object types, inputs, enums and the schema as a contract."],
+          ["Queries & mutations", "Reading and writing data with a single endpoint."],
+          ["Resolvers", "How fields are resolved and composed from multiple sources."],
+          ["N+1 & DataLoader", "Batching and caching to avoid performance traps."],
+          ["Subscriptions", "Real-time updates over WebSockets."],
+          ["Security", "Query depth limits, complexity analysis and authorization per field."]
+        ],
+        "practice": "Part of my Node.js toolkit (Express, NestJS, GraphQL) and covered in depth in my “Node.js – The Complete Guide” certification."
+      },
+      "pt": {
+        "tagline": "Peça exatamente os dados de que precisa.",
+        "overview": "GraphQL é uma linguagem de consulta e um runtime para APIs que permite ao cliente pedir exatamente os dados de que precisa. Uso com Node.js quando vários front-ends consomem o mesmo domínio com necessidades diferentes.",
+        "concepts": [
+          ["Schema e tipos", "SDL, object types, inputs, enums e o schema como contrato."],
+          ["Queries e mutations", "Ler e escrever dados com um único endpoint."],
+          ["Resolvers", "Como os campos são resolvidos e compostos a partir de várias fontes."],
+          ["N+1 e DataLoader", "Batching e cache para evitar armadilhas de performance."],
+          ["Subscriptions", "Atualizações em tempo real via WebSockets."],
+          ["Segurança", "Limite de profundidade, análise de complexidade e autorização por campo."]
+        ],
+        "practice": "Faz parte do meu repertório Node.js (Express, NestJS, GraphQL) e foi aprofundado na certificação “Node.js – The Complete Guide”."
+      }
+    },
+    {
+      "slug": "react", "name": "React", "category": "frontend", "kind": "tool",
+      "usedAt": ["Stellar Gaming", "DOMVS iT", "Claro"],
+      "related": ["nextjs", "redux", "reduxsaga", "javascript"],
+      "en": {
+        "tagline": "Component-driven interfaces at scale.",
+        "overview": "React is my main front-end library. I use it to design component architectures that scale across squads — from design systems to micro-frontends — keeping state predictable and rendering fast.",
+        "concepts": [
+          ["Components & JSX", "Composition, props and building UIs from small, reusable pieces."],
+          ["State & hooks", "useState, useEffect, useMemo, custom hooks and the rules of hooks."],
+          ["Rendering model", "Reconciliation, keys, memoization and avoiding unnecessary re-renders."],
+          ["State management", "Context API, Redux and when local state is enough."],
+          ["Data fetching", "Loading and error states, caching and server components."],
+          ["Testing", "Testing Library and Jest: test behavior, not implementation."]
+        ],
+        "practice": "Implemented a micro-frontend architecture at Claro where React, Angular and Vue coexist, built Next.js sites at DOMVS iT and lead front-end architecture at Stellar Gaming."
+      },
+      "pt": {
+        "tagline": "Interfaces orientadas a componentes, em escala.",
+        "overview": "React é minha principal biblioteca de front-end. Uso para desenhar arquiteturas de componentes que escalam entre squads — de design systems a micro-frontends — mantendo o estado previsível e a renderização rápida.",
+        "concepts": [
+          ["Componentes e JSX", "Composição, props e interfaces feitas de peças pequenas e reutilizáveis."],
+          ["Estado e hooks", "useState, useEffect, useMemo, hooks customizados e as regras dos hooks."],
+          ["Modelo de renderização", "Reconciliação, keys, memoização e como evitar re-renders desnecessários."],
+          ["Gerência de estado", "Context API, Redux e quando o estado local basta."],
+          ["Busca de dados", "Estados de loading e erro, cache e server components."],
+          ["Testes", "Testing Library e Jest: testar comportamento, não implementação."]
+        ],
+        "practice": "Implementei na Claro uma arquitetura de micro-frontends onde React, Angular e Vue convivem, construí sites em Next.js na DOMVS iT e lidero a arquitetura de front-end na Stellar Gaming."
+      }
+    },
+    {
+      "slug": "redux", "name": "Redux", "category": "frontend", "kind": "tool",
+      "usedAt": [],
+      "related": ["react", "reduxsaga"],
+      "en": {
+        "tagline": "Predictable state for complex applications.",
+        "overview": "Redux centralizes application state in a single, predictable store. I use it when many parts of an app share and change the same data, and the team needs traceability and debuggability.",
+        "concepts": [
+          ["Single store", "One source of truth for global application state."],
+          ["Actions & reducers", "State changes described as events and handled by pure functions."],
+          ["Immutability", "Never mutate state; return new objects to enable change detection."],
+          ["Selectors", "Deriving and memoizing data with reselect."],
+          ["Middleware", "Extending dispatch for async flows, logging and side effects."],
+          ["Redux Toolkit", "createSlice, RTK Query and less boilerplate."]
+        ],
+        "practice": "Part of my React toolkit (Redux, Redux-Saga, Context API) for applications with complex shared state."
+      },
+      "pt": {
+        "tagline": "Estado previsível para aplicações complexas.",
+        "overview": "Redux centraliza o estado da aplicação em uma store única e previsível. Uso quando várias partes do app compartilham e alteram os mesmos dados e o time precisa de rastreabilidade e facilidade de debug.",
+        "concepts": [
+          ["Store única", "Uma única fonte da verdade para o estado global."],
+          ["Actions e reducers", "Mudanças de estado descritas como eventos e tratadas por funções puras."],
+          ["Imutabilidade", "Nunca mutar o estado; retornar novos objetos para detectar mudanças."],
+          ["Selectors", "Derivar e memoizar dados com reselect."],
+          ["Middleware", "Estender o dispatch para fluxos assíncronos, logs e efeitos colaterais."],
+          ["Redux Toolkit", "createSlice, RTK Query e menos boilerplate."]
+        ],
+        "practice": "Faz parte do meu repertório React (Redux, Redux-Saga, Context API) para aplicações com estado compartilhado complexo."
+      }
+    },
+    {
+      "slug": "reduxsaga", "name": "Redux-Saga", "category": "frontend", "kind": "tool",
+      "usedAt": [],
+      "related": ["redux", "react", "javascript"],
+      "en": {
+        "tagline": "Side effects, orchestrated.",
+        "overview": "Redux-Saga manages side effects such as API calls, retries and background tasks with generator functions. It shines when async flows get complex and need to be tested and cancelled reliably.",
+        "concepts": [
+          ["Generators", "function* and yield as the foundation of sagas."],
+          ["Effects", "call, put, take, select — declarative descriptions of side effects."],
+          ["Watchers & workers", "Listening for actions and delegating work."],
+          ["Concurrency helpers", "takeLatest, takeEvery, race and debounce."],
+          ["Cancellation", "Stopping in-flight tasks when the user navigates away."],
+          ["Testability", "Step-by-step testing of sagas without mocking the network."]
+        ],
+        "practice": "Used alongside Redux in React applications to keep complex async flows readable and testable."
+      },
+      "pt": {
+        "tagline": "Efeitos colaterais, orquestrados.",
+        "overview": "Redux-Saga gerencia efeitos colaterais como chamadas de API, retentativas e tarefas em segundo plano usando generators. Brilha quando os fluxos assíncronos ficam complexos e precisam ser testados e cancelados com confiança.",
+        "concepts": [
+          ["Generators", "function* e yield como base das sagas."],
+          ["Effects", "call, put, take, select — descrições declarativas de efeitos colaterais."],
+          ["Watchers e workers", "Escutar actions e delegar o trabalho."],
+          ["Helpers de concorrência", "takeLatest, takeEvery, race e debounce."],
+          ["Cancelamento", "Interromper tarefas em andamento quando o usuário sai da tela."],
+          ["Testabilidade", "Testar sagas passo a passo sem mockar a rede."]
+        ],
+        "practice": "Usado junto com Redux em aplicações React para manter fluxos assíncronos complexos legíveis e testáveis."
+      }
+    },
+    {
+      "slug": "nextjs", "name": "Next.js", "category": "frontend", "kind": "tool",
+      "usedAt": ["DOMVS iT", "Stellar Gaming"],
+      "related": ["react", "nodejs", "aws"],
+      "en": {
+        "tagline": "React with rendering strategies built in.",
+        "overview": "Next.js adds routing, server rendering and performance defaults on top of React. I choose it for sites where SEO, first-load speed and a clean full-stack developer experience matter.",
+        "concepts": [
+          ["Routing", "App Router, layouts, nested and dynamic routes."],
+          ["Rendering strategies", "SSR, SSG, ISR and client rendering — and choosing per page."],
+          ["Server components", "Fetching data on the server and shipping less JavaScript."],
+          ["Data & caching", "fetch caching, revalidation and route handlers."],
+          ["Performance", "Image, font and script optimization, Core Web Vitals."],
+          ["Deployment", "Edge vs Node runtimes and deploying on cloud platforms."]
+        ],
+        "practice": "Core stack of the main website I built for a DOMVS iT client, where I also took part in front-end architecture and standards decisions."
+      },
+      "pt": {
+        "tagline": "React com estratégias de renderização embutidas.",
+        "overview": "Next.js adiciona roteamento, renderização no servidor e padrões de performance ao React. Escolho quando SEO, velocidade no primeiro carregamento e uma boa experiência full-stack importam.",
+        "concepts": [
+          ["Roteamento", "App Router, layouts, rotas aninhadas e dinâmicas."],
+          ["Estratégias de renderização", "SSR, SSG, ISR e renderização no cliente — escolhendo por página."],
+          ["Server components", "Buscar dados no servidor e enviar menos JavaScript."],
+          ["Dados e cache", "Cache do fetch, revalidação e route handlers."],
+          ["Performance", "Otimização de imagens, fontes e scripts, Core Web Vitals."],
+          ["Deploy", "Runtimes Edge vs Node e deploy em plataformas cloud."]
+        ],
+        "practice": "Stack principal do site que construí para um cliente da DOMVS iT, onde também participei das decisões de arquitetura e padrões de front-end."
+      }
+    },
+    {
+      "slug": "vuejs", "name": "Vue.js", "category": "frontend", "kind": "tool",
+      "usedAt": ["Claro"],
+      "related": ["javascript", "jest", "react"],
+      "en": {
+        "tagline": "Progressive, approachable and productive.",
+        "overview": "Vue.js is a progressive framework that is easy to adopt incrementally. I introduced it into a large project at Claro and used it to deliver features in the logged-in area of the website.",
+        "concepts": [
+          ["Reactivity", "How Vue tracks dependencies and updates the DOM."],
+          ["Single-file components", "Template, script and style in one cohesive file."],
+          ["Composition API", "setup, ref, reactive and composables for reuse."],
+          ["Directives", "v-if, v-for, v-model and custom directives."],
+          ["State & routing", "Pinia/Vuex and Vue Router."],
+          ["Incremental adoption", "Introducing Vue into an existing page or app."]
+        ],
+        "practice": "Introduced Vue.js into the Claro project and delivered logged-in area features with Vue, HTML5, CSS3 and Jest unit tests."
+      },
+      "pt": {
+        "tagline": "Progressivo, acessível e produtivo.",
+        "overview": "Vue.js é um framework progressivo, fácil de adotar aos poucos. Introduzi o Vue em um grande projeto na Claro e usei para entregar funcionalidades na área logada do site.",
+        "concepts": [
+          ["Reatividade", "Como o Vue rastreia dependências e atualiza o DOM."],
+          ["Single-file components", "Template, script e estilo em um único arquivo coeso."],
+          ["Composition API", "setup, ref, reactive e composables para reuso."],
+          ["Diretivas", "v-if, v-for, v-model e diretivas customizadas."],
+          ["Estado e rotas", "Pinia/Vuex e Vue Router."],
+          ["Adoção incremental", "Introduzir Vue em uma página ou app existente."]
+        ],
+        "practice": "Introduzi o Vue.js no projeto da Claro e entreguei funcionalidades da área logada com Vue, HTML5, CSS3 e testes unitários com Jest."
+      }
+    },
+    {
+      "slug": "angular", "name": "Angular", "category": "frontend", "kind": "tool",
+      "usedAt": ["Resource IT", "Claro"],
+      "related": ["javascript", "react", "vuejs"],
+      "en": {
+        "tagline": "A complete framework for large applications.",
+        "overview": "Angular is an opinionated, batteries-included framework with TypeScript at its core. I've built apps with it, migrated AngularJS to Angular 2 and made it coexist with React and Vue in a micro-frontend architecture.",
+        "concepts": [
+          ["Components & modules", "Building blocks and how apps are organized."],
+          ["Dependency injection", "Services, providers and hierarchical injectors."],
+          ["RxJS", "Observables and operators for async data streams."],
+          ["Templates & binding", "Property, event and two-way binding, pipes."],
+          ["Routing & forms", "Router, guards, reactive and template-driven forms."],
+          ["Change detection", "Zones, OnPush and signals for performance."]
+        ],
+        "practice": "Built web apps and migrated applications from AngularJS (1.x) to Angular 2 at Resource IT; integrated Angular into the micro-frontend platform at Claro."
+      },
+      "pt": {
+        "tagline": "Um framework completo para grandes aplicações.",
+        "overview": "Angular é um framework opinativo e completo, com TypeScript no centro. Construí apps com ele, migrei AngularJS para Angular 2 e o fiz conviver com React e Vue em uma arquitetura de micro-frontends.",
+        "concepts": [
+          ["Componentes e módulos", "Os blocos de construção e como os apps são organizados."],
+          ["Injeção de dependência", "Services, providers e injetores hierárquicos."],
+          ["RxJS", "Observables e operadores para fluxos de dados assíncronos."],
+          ["Templates e binding", "Property, event e two-way binding, pipes."],
+          ["Rotas e formulários", "Router, guards, formulários reativos e template-driven."],
+          ["Detecção de mudanças", "Zones, OnPush e signals para performance."]
+        ],
+        "practice": "Construí web apps e migrei aplicações de AngularJS (1.x) para Angular 2 na Resource IT; integrei Angular à plataforma de micro-frontends da Claro."
+      }
+    },
+    {
+      "slug": "nodejs", "name": "Node.js", "category": "backend", "kind": "tool",
+      "usedAt": ["Stellar Gaming"],
+      "related": ["express", "nestjs", "graphql", "javascript"],
+      "en": {
+        "tagline": "JavaScript on the server, at scale.",
+        "overview": "Node.js runs JavaScript on the server with a non-blocking, event-driven model. I use it to build APIs and services, and to share language and tooling between front-end and back-end teams.",
+        "concepts": [
+          ["Event-driven I/O", "Non-blocking operations and why Node handles many connections."],
+          ["Modules & npm", "CommonJS vs ESM, package management and lockfiles."],
+          ["Streams & buffers", "Processing large data efficiently."],
+          ["Error handling", "Async errors, process signals and graceful shutdown."],
+          ["Scaling", "Cluster, worker threads and horizontal scaling."],
+          ["Security", "Dependency audits, input validation and secrets management."]
+        ],
+        "practice": "Back-end of my full-stack work (Express, NestJS, GraphQL), certified in “Node.js – The Complete Guide (MVC, REST APIs, GraphQL, Deno)”."
+      },
+      "pt": {
+        "tagline": "JavaScript no servidor, em escala.",
+        "overview": "Node.js executa JavaScript no servidor com um modelo não bloqueante e orientado a eventos. Uso para construir APIs e serviços, e para compartilhar linguagem e ferramental entre times de front-end e back-end.",
+        "concepts": [
+          ["I/O orientado a eventos", "Operações não bloqueantes e por que o Node aguenta muitas conexões."],
+          ["Módulos e npm", "CommonJS vs ESM, gerenciamento de pacotes e lockfiles."],
+          ["Streams e buffers", "Processar grandes volumes de dados com eficiência."],
+          ["Tratamento de erros", "Erros assíncronos, sinais do processo e graceful shutdown."],
+          ["Escala", "Cluster, worker threads e escala horizontal."],
+          ["Segurança", "Auditoria de dependências, validação de entrada e gestão de segredos."]
+        ],
+        "practice": "Back-end do meu trabalho full-stack (Express, NestJS, GraphQL), com certificação em “Node.js – The Complete Guide (MVC, REST APIs, GraphQL, Deno)”."
+      }
+    },
+    {
+      "slug": "express", "name": "Express", "category": "backend", "kind": "tool",
+      "usedAt": [],
+      "related": ["nodejs", "nestjs", "mongodb"],
+      "en": {
+        "tagline": "Minimal and flexible HTTP for Node.js.",
+        "overview": "Express is the minimal web framework behind countless Node.js APIs. I use it for lightweight services and BFFs where simplicity and full control over the request pipeline matter.",
+        "concepts": [
+          ["Routing", "Routers, params and RESTful resource design."],
+          ["Middleware", "The request/response pipeline and composing behavior."],
+          ["Error handling", "Centralized error middleware and consistent responses."],
+          ["Validation", "Validating and sanitizing input at the edge."],
+          ["Security", "Helmet, CORS, rate limiting and authentication."],
+          ["Structure", "Organizing controllers, services and layers as the app grows."]
+        ],
+        "practice": "Part of my Node.js toolkit for REST APIs, studied in depth in my Node.js certification (MVC and REST APIs)."
+      },
+      "pt": {
+        "tagline": "HTTP mínimo e flexível para Node.js.",
+        "overview": "Express é o framework web minimalista por trás de inúmeras APIs Node.js. Uso em serviços leves e BFFs, onde simplicidade e controle total do pipeline de requisição importam.",
+        "concepts": [
+          ["Rotas", "Routers, parâmetros e design de recursos RESTful."],
+          ["Middleware", "O pipeline de request/response e a composição de comportamento."],
+          ["Tratamento de erros", "Middleware de erro centralizado e respostas consistentes."],
+          ["Validação", "Validar e sanitizar a entrada na borda."],
+          ["Segurança", "Helmet, CORS, rate limiting e autenticação."],
+          ["Estrutura", "Organizar controllers, services e camadas conforme o app cresce."]
+        ],
+        "practice": "Faz parte do meu repertório Node.js para APIs REST, aprofundado na certificação de Node.js (MVC e REST APIs)."
+      }
+    },
+    {
+      "slug": "nestjs", "name": "NestJS", "category": "backend", "kind": "tool",
+      "usedAt": [],
+      "related": ["nodejs", "express", "graphql"],
+      "en": {
+        "tagline": "Structured, scalable Node.js back-ends.",
+        "overview": "NestJS brings architecture to Node.js: modules, dependency injection and decorators inspired by Angular. I reach for it when a back-end needs clear boundaries that a growing team can follow.",
+        "concepts": [
+          ["Modules", "Organizing the app into cohesive, feature-based modules."],
+          ["Providers & DI", "Services injected through Nest's IoC container."],
+          ["Controllers & decorators", "Declarative routing and metadata."],
+          ["Pipes, guards, interceptors", "Validation, authorization and cross-cutting concerns."],
+          ["GraphQL & microservices", "First-class support for GraphQL and message-based transports."],
+          ["Testing", "Unit and e2e tests with the testing module."]
+        ],
+        "practice": "Part of my Node.js back-end toolkit (Express, NestJS, GraphQL) for services that need clear architecture."
+      },
+      "pt": {
+        "tagline": "Back-ends Node.js estruturados e escaláveis.",
+        "overview": "NestJS traz arquitetura para o Node.js: módulos, injeção de dependência e decorators inspirados no Angular. Escolho quando um back-end precisa de fronteiras claras que um time em crescimento consiga seguir.",
+        "concepts": [
+          ["Módulos", "Organizar o app em módulos coesos por funcionalidade."],
+          ["Providers e DI", "Services injetados pelo container de IoC do Nest."],
+          ["Controllers e decorators", "Rotas declarativas e metadados."],
+          ["Pipes, guards, interceptors", "Validação, autorização e preocupações transversais."],
+          ["GraphQL e microsserviços", "Suporte nativo a GraphQL e transportes baseados em mensagens."],
+          ["Testes", "Testes unitários e e2e com o testing module."]
+        ],
+        "practice": "Faz parte do meu repertório de back-end Node.js (Express, NestJS, GraphQL) para serviços que precisam de arquitetura clara."
+      }
+    },
+    {
+      "slug": "spring", "name": "Spring", "category": "backend", "kind": "tool",
+      "usedAt": [],
+      "related": ["java", "oracle", "sqlserver"],
+      "en": {
+        "tagline": "The enterprise standard for Java services.",
+        "overview": "Spring is the de facto framework for Java back-ends. I use Spring Boot to build production-ready services with dependency injection, data access and security handled consistently.",
+        "concepts": [
+          ["IoC & DI", "The application context, beans and their lifecycle."],
+          ["Spring Boot", "Auto-configuration, starters and production-ready defaults."],
+          ["Spring MVC & REST", "Controllers, request mapping and exception handlers."],
+          ["Spring Data JPA", "Repositories, entities and transactions."],
+          ["Spring Security", "Authentication, authorization and JWT/OAuth2."],
+          ["Observability", "Actuator, health checks and metrics."]
+        ],
+        "practice": "My framework of choice for Java back-ends (Java with Spring), complementing my Node.js work."
+      },
+      "pt": {
+        "tagline": "O padrão corporativo para serviços Java.",
+        "overview": "Spring é o framework de fato para back-ends Java. Uso Spring Boot para construir serviços prontos para produção, com injeção de dependência, acesso a dados e segurança tratados de forma consistente.",
+        "concepts": [
+          ["IoC e DI", "O application context, os beans e seu ciclo de vida."],
+          ["Spring Boot", "Autoconfiguração, starters e padrões prontos para produção."],
+          ["Spring MVC e REST", "Controllers, mapeamento de requisições e exception handlers."],
+          ["Spring Data JPA", "Repositories, entidades e transações."],
+          ["Spring Security", "Autenticação, autorização e JWT/OAuth2."],
+          ["Observabilidade", "Actuator, health checks e métricas."]
+        ],
+        "practice": "Meu framework preferido para back-ends Java (Java com Spring), complementando o trabalho com Node.js."
+      }
+    },
+    {
+      "slug": "vtex", "name": "VTEX IO", "category": "backend", "kind": "tool",
+      "usedAt": [],
+      "related": ["react", "nodejs", "graphql"],
+      "en": {
+        "tagline": "Composable commerce on a serverless platform.",
+        "overview": "VTEX IO is VTEX's development platform for building custom storefronts and back-end apps for e-commerce. It combines React, Node.js and GraphQL on a managed, serverless infrastructure.",
+        "concepts": [
+          ["Store Framework", "Building storefronts from blocks, themes and interfaces."],
+          ["React apps", "Custom front-end components on VTEX IO."],
+          ["Node & GraphQL services", "Back-end apps and resolvers on the platform."],
+          ["Workspaces", "Developing, testing and promoting changes safely."],
+          ["Apps & dependencies", "Manifest, builders and versioning."],
+          ["Performance & SEO", "Optimizing storefronts for conversion."]
+        ],
+        "practice": "Part of my back-end and e-commerce toolkit for building on the VTEX platform."
+      },
+      "pt": {
+        "tagline": "Commerce componível em uma plataforma serverless.",
+        "overview": "VTEX IO é a plataforma de desenvolvimento da VTEX para criar storefronts e apps de back-end sob medida para e-commerce. Combina React, Node.js e GraphQL em uma infraestrutura gerenciada e serverless.",
+        "concepts": [
+          ["Store Framework", "Montar storefronts a partir de blocos, temas e interfaces."],
+          ["Apps React", "Componentes de front-end customizados no VTEX IO."],
+          ["Serviços Node e GraphQL", "Apps de back-end e resolvers na plataforma."],
+          ["Workspaces", "Desenvolver, testar e promover mudanças com segurança."],
+          ["Apps e dependências", "Manifest, builders e versionamento."],
+          ["Performance e SEO", "Otimizar storefronts para conversão."]
+        ],
+        "practice": "Faz parte do meu repertório de back-end e e-commerce para construir na plataforma VTEX."
+      }
+    },
+    {
+      "slug": "mysql", "name": "MySQL", "category": "data", "kind": "tool",
+      "usedAt": ["Tugarê"],
+      "related": ["php", "sqlserver", "oracle"],
+      "en": {
+        "tagline": "The open-source relational workhorse.",
+        "overview": "MySQL is one of the most widely used relational databases. I've used it to back websites and web systems, and I apply the same relational fundamentals across every SQL engine.",
+        "concepts": [
+          ["Relational modeling", "Tables, keys and normalization."],
+          ["SQL & joins", "Querying related data efficiently."],
+          ["Indexes", "B-tree indexes, EXPLAIN and query optimization."],
+          ["Transactions", "ACID, isolation levels and InnoDB."],
+          ["Replication", "Read replicas and high availability."],
+          ["Backup & security", "Users, privileges and recovery strategies."]
+        ],
+        "practice": "Database behind the websites and web systems I built with PHP and WordPress at Tugarê | CDM São Paulo."
+      },
+      "pt": {
+        "tagline": "O banco relacional open source de confiança.",
+        "overview": "MySQL é um dos bancos relacionais mais usados no mundo. Usei como base de sites e sistemas web, e aplico os mesmos fundamentos relacionais em qualquer motor SQL.",
+        "concepts": [
+          ["Modelagem relacional", "Tabelas, chaves e normalização."],
+          ["SQL e joins", "Consultar dados relacionados com eficiência."],
+          ["Índices", "Índices B-tree, EXPLAIN e otimização de queries."],
+          ["Transações", "ACID, níveis de isolamento e InnoDB."],
+          ["Replicação", "Réplicas de leitura e alta disponibilidade."],
+          ["Backup e segurança", "Usuários, privilégios e estratégias de recuperação."]
+        ],
+        "practice": "Banco por trás dos sites e sistemas web que construí com PHP e WordPress na Tugarê | CDM São Paulo."
+      }
+    },
+    {
+      "slug": "sqlserver", "name": "SQL Server", "category": "data", "kind": "tool",
+      "usedAt": ["Marvin"],
+      "related": ["dotnet", "azure", "mysql"],
+      "en": {
+        "tagline": "Microsoft's enterprise relational database.",
+        "overview": "SQL Server is Microsoft's relational database, common in enterprise and .NET environments. I worked with it on legacy systems where data integrity and careful change were essential.",
+        "concepts": [
+          ["T-SQL", "Microsoft's SQL dialect, CTEs and window functions."],
+          ["Stored procedures", "Encapsulating logic close to the data — and its trade-offs."],
+          ["Indexing", "Clustered vs non-clustered indexes and execution plans."],
+          ["Transactions & locking", "Isolation levels and avoiding deadlocks."],
+          ["Integration with .NET", "Entity Framework and ADO.NET access."],
+          ["Azure SQL", "Managed SQL Server in the cloud."]
+        ],
+        "practice": "Maintained legacy systems backed by SQL Server for the energy and pharmaceutical sectors at Marvin."
+      },
+      "pt": {
+        "tagline": "O banco relacional corporativo da Microsoft.",
+        "overview": "SQL Server é o banco relacional da Microsoft, comum em ambientes corporativos e .NET. Trabalhei com ele em sistemas legados onde integridade dos dados e mudanças cuidadosas eram essenciais.",
+        "concepts": [
+          ["T-SQL", "O dialeto SQL da Microsoft, CTEs e window functions."],
+          ["Stored procedures", "Lógica perto dos dados — e seus trade-offs."],
+          ["Indexação", "Índices clustered vs non-clustered e planos de execução."],
+          ["Transações e locks", "Níveis de isolamento e como evitar deadlocks."],
+          ["Integração com .NET", "Acesso via Entity Framework e ADO.NET."],
+          ["Azure SQL", "SQL Server gerenciado na nuvem."]
+        ],
+        "practice": "Mantive sistemas legados com SQL Server dos setores de energia e farmacêutico na Marvin."
+      }
+    },
+    {
+      "slug": "oracle", "name": "Oracle", "category": "data", "kind": "tool",
+      "usedAt": [],
+      "related": ["java", "spring", "sqlserver"],
+      "en": {
+        "tagline": "Mission-critical relational data.",
+        "overview": "Oracle Database powers mission-critical systems in large enterprises. I know how to design for it and integrate services with it, especially in Java ecosystems.",
+        "concepts": [
+          ["PL/SQL", "Procedural extensions, packages and triggers."],
+          ["Schemas & tablespaces", "How Oracle organizes data and storage."],
+          ["Performance tuning", "Execution plans, hints and statistics."],
+          ["Transactions", "Read consistency, undo and redo."],
+          ["High availability", "RAC and Data Guard concepts."],
+          ["Integration", "JDBC and connection pooling from Java services."]
+        ],
+        "practice": "Part of my database toolkit (MySQL, SQL Server, Oracle) for enterprise integrations."
+      },
+      "pt": {
+        "tagline": "Dados relacionais de missão crítica.",
+        "overview": "O Oracle Database sustenta sistemas de missão crítica em grandes empresas. Sei modelar para ele e integrar serviços, especialmente em ecossistemas Java.",
+        "concepts": [
+          ["PL/SQL", "Extensões procedurais, packages e triggers."],
+          ["Schemas e tablespaces", "Como o Oracle organiza dados e armazenamento."],
+          ["Tuning de performance", "Planos de execução, hints e estatísticas."],
+          ["Transações", "Consistência de leitura, undo e redo."],
+          ["Alta disponibilidade", "Conceitos de RAC e Data Guard."],
+          ["Integração", "JDBC e pool de conexões a partir de serviços Java."]
+        ],
+        "practice": "Faz parte do meu repertório de bancos (MySQL, SQL Server, Oracle) para integrações corporativas."
+      }
+    },
+    {
+      "slug": "mongodb", "name": "MongoDB", "category": "data", "kind": "tool",
+      "usedAt": [],
+      "related": ["nodejs", "express", "dynamodb"],
+      "en": {
+        "tagline": "Flexible documents for evolving domains.",
+        "overview": "MongoDB is a document database that stores data as flexible JSON-like documents. I use it when the domain evolves quickly and data is naturally hierarchical, especially with Node.js.",
+        "concepts": [
+          ["Document modeling", "Embedding vs referencing, designing for access patterns."],
+          ["CRUD & queries", "Filters, projections and operators."],
+          ["Indexes", "Compound, text and TTL indexes."],
+          ["Aggregation pipeline", "Transforming and analyzing data in stages."],
+          ["Replica sets & sharding", "Availability and horizontal scale."],
+          ["Transactions", "Multi-document transactions and when you need them."]
+        ],
+        "practice": "Part of my NoSQL toolkit (MongoDB, Firestore, DynamoDB) for Node.js services."
+      },
+      "pt": {
+        "tagline": "Documentos flexíveis para domínios em evolução.",
+        "overview": "MongoDB é um banco de documentos que armazena dados como documentos flexíveis no estilo JSON. Uso quando o domínio evolui rápido e os dados são naturalmente hierárquicos, especialmente com Node.js.",
+        "concepts": [
+          ["Modelagem de documentos", "Embutir vs referenciar, modelar pelos padrões de acesso."],
+          ["CRUD e consultas", "Filtros, projeções e operadores."],
+          ["Índices", "Índices compostos, de texto e TTL."],
+          ["Aggregation pipeline", "Transformar e analisar dados em etapas."],
+          ["Replica sets e sharding", "Disponibilidade e escala horizontal."],
+          ["Transações", "Transações multi-documento e quando são necessárias."]
+        ],
+        "practice": "Faz parte do meu repertório NoSQL (MongoDB, Firestore, DynamoDB) para serviços Node.js."
+      }
+    },
+    {
+      "slug": "firebase", "name": "Firestore", "category": "data", "kind": "tool",
+      "usedAt": [],
+      "related": ["gcp", "mongodb", "react"],
+      "en": {
+        "tagline": "Real-time data, serverless by default.",
+        "overview": "Cloud Firestore is Google's serverless document database with real-time sync. I use it for apps that need fast iteration, offline support and live updates without managing servers.",
+        "concepts": [
+          ["Collections & documents", "Hierarchical data model and subcollections."],
+          ["Real-time listeners", "Syncing UI state with live data."],
+          ["Queries & indexes", "Composite indexes and query limitations."],
+          ["Security rules", "Authorization enforced at the database layer."],
+          ["Offline support", "Local cache and sync on reconnect."],
+          ["Cost model", "Reads, writes and designing to control costs."]
+        ],
+        "practice": "Part of my NoSQL toolkit (MongoDB, Firestore, DynamoDB) on Google Cloud."
+      },
+      "pt": {
+        "tagline": "Dados em tempo real, serverless por padrão.",
+        "overview": "O Cloud Firestore é o banco de documentos serverless do Google com sincronização em tempo real. Uso em apps que precisam iterar rápido, funcionar offline e receber atualizações ao vivo sem gerenciar servidores.",
+        "concepts": [
+          ["Coleções e documentos", "Modelo de dados hierárquico e subcoleções."],
+          ["Listeners em tempo real", "Sincronizar a interface com dados ao vivo."],
+          ["Consultas e índices", "Índices compostos e limitações de consulta."],
+          ["Security rules", "Autorização aplicada na camada do banco."],
+          ["Suporte offline", "Cache local e sincronização ao reconectar."],
+          ["Modelo de custo", "Leituras, escritas e como modelar para controlar custos."]
+        ],
+        "practice": "Faz parte do meu repertório NoSQL (MongoDB, Firestore, DynamoDB) no Google Cloud."
+      }
+    },
+    {
+      "slug": "dynamodb", "name": "DynamoDB", "category": "data", "kind": "tool",
+      "usedAt": [],
+      "related": ["aws", "nodejs", "mongodb"],
+      "en": {
+        "tagline": "Single-digit millisecond scale on AWS.",
+        "overview": "DynamoDB is AWS's fully managed key-value and document database built for massive scale. I design for it around access patterns, which is a different mindset from relational modeling.",
+        "concepts": [
+          ["Partition & sort keys", "How data is distributed and queried."],
+          ["Access-pattern design", "Modeling from the queries you need, not the entities."],
+          ["Single-table design", "Storing multiple entity types in one table."],
+          ["GSIs & LSIs", "Secondary indexes for alternative queries."],
+          ["Capacity modes", "On-demand vs provisioned throughput."],
+          ["Streams", "Change data capture with Lambda integrations."]
+        ],
+        "practice": "Part of my NoSQL toolkit on AWS, the cloud I used at Claro to improve application scalability."
+      },
+      "pt": {
+        "tagline": "Escala de milissegundos na AWS.",
+        "overview": "DynamoDB é o banco chave-valor e de documentos totalmente gerenciado da AWS, feito para escala massiva. Modelo para ele a partir dos padrões de acesso, uma forma de pensar diferente da modelagem relacional.",
+        "concepts": [
+          ["Partition e sort keys", "Como os dados são distribuídos e consultados."],
+          ["Modelagem por acesso", "Modelar a partir das consultas necessárias, não das entidades."],
+          ["Single-table design", "Guardar vários tipos de entidade em uma só tabela."],
+          ["GSIs e LSIs", "Índices secundários para consultas alternativas."],
+          ["Modos de capacidade", "Throughput on-demand vs provisionado."],
+          ["Streams", "Captura de mudanças integrada ao Lambda."]
+        ],
+        "practice": "Faz parte do meu repertório NoSQL na AWS, a nuvem que usei na Claro para melhorar a escalabilidade das aplicações."
+      }
+    },
+    {
+      "slug": "aws", "name": "AWS", "category": "cloud", "kind": "tool",
+      "usedAt": ["Claro"],
+      "related": ["dynamodb", "jenkins", "azure", "gcp"],
+      "en": {
+        "tagline": "Scalable infrastructure, designed deliberately.",
+        "overview": "Amazon Web Services is the broadest cloud platform. As an architect I use it to design scalable, highly available systems, choosing managed services that reduce operational load.",
+        "concepts": [
+          ["Well-Architected", "Reliability, security, cost, performance and operational excellence."],
+          ["Compute", "EC2, ECS/EKS and Lambda — choosing the right abstraction."],
+          ["Storage & CDN", "S3 and CloudFront for static assets and front-ends."],
+          ["Networking", "VPC, subnets, security groups and load balancers."],
+          ["IAM", "Least privilege, roles and policies."],
+          ["Observability", "CloudWatch metrics, logs and alarms."]
+        ],
+        "practice": "Leveraged AWS cloud services to improve application scalability as a Systems Architect at Claro."
+      },
+      "pt": {
+        "tagline": "Infraestrutura escalável, desenhada com intenção.",
+        "overview": "A Amazon Web Services é a plataforma de nuvem mais ampla do mercado. Como arquiteto, uso para desenhar sistemas escaláveis e altamente disponíveis, escolhendo serviços gerenciados que reduzem a carga operacional.",
+        "concepts": [
+          ["Well-Architected", "Confiabilidade, segurança, custo, performance e excelência operacional."],
+          ["Computação", "EC2, ECS/EKS e Lambda — escolhendo a abstração certa."],
+          ["Storage e CDN", "S3 e CloudFront para assets estáticos e front-ends."],
+          ["Rede", "VPC, subnets, security groups e load balancers."],
+          ["IAM", "Menor privilégio, roles e policies."],
+          ["Observabilidade", "Métricas, logs e alarmes no CloudWatch."]
+        ],
+        "practice": "Usei serviços da AWS para melhorar a escalabilidade das aplicações como Arquiteto de Sistemas na Claro."
+      }
+    },
+    {
+      "slug": "azure", "name": "Azure", "category": "cloud", "kind": "tool",
+      "usedAt": [],
+      "related": ["aws", "gcp", "jenkins", "dotnet"],
+      "en": {
+        "tagline": "DevOps and cloud on Microsoft's platform.",
+        "overview": "Microsoft Azure is a cloud platform deeply integrated with enterprise tooling. My focus is DevOps on Azure: designing pipelines, release strategies and feedback loops that make delivery reliable.",
+        "concepts": [
+          ["Azure DevOps", "Boards, Repos, Pipelines and Artifacts."],
+          ["CI/CD pipelines", "YAML pipelines, stages, gates and approvals."],
+          ["Release strategies", "Blue-green, canary and feature flags."],
+          ["Infrastructure as Code", "ARM/Bicep and Terraform."],
+          ["Identity", "Microsoft Entra ID and role-based access."],
+          ["Monitoring", "Azure Monitor and Application Insights."]
+        ],
+        "practice": "Certified in AZ-400: Designing and Implementing Microsoft DevOps Solutions."
+      },
+      "pt": {
+        "tagline": "DevOps e nuvem na plataforma da Microsoft.",
+        "overview": "Microsoft Azure é uma plataforma de nuvem profundamente integrada ao ferramental corporativo. Meu foco é DevOps no Azure: desenhar pipelines, estratégias de release e ciclos de feedback que tornam a entrega confiável.",
+        "concepts": [
+          ["Azure DevOps", "Boards, Repos, Pipelines e Artifacts."],
+          ["Pipelines de CI/CD", "Pipelines YAML, stages, gates e aprovações."],
+          ["Estratégias de release", "Blue-green, canary e feature flags."],
+          ["Infraestrutura como código", "ARM/Bicep e Terraform."],
+          ["Identidade", "Microsoft Entra ID e controle de acesso por papéis."],
+          ["Monitoramento", "Azure Monitor e Application Insights."]
+        ],
+        "practice": "Certificado em AZ-400: Designing and Implementing Microsoft DevOps Solutions."
+      }
+    },
+    {
+      "slug": "gcp", "name": "Google Cloud", "category": "cloud", "kind": "tool",
+      "usedAt": [],
+      "related": ["firebase", "aws", "azure"],
+      "en": {
+        "tagline": "Data, containers and serverless on Google's cloud.",
+        "overview": "Google Cloud stands out in data, containers and serverless. I include it in architecture decisions alongside AWS and Azure, choosing the platform that best fits each product's constraints.",
+        "concepts": [
+          ["Projects & IAM", "Resource hierarchy and access control."],
+          ["Cloud Run & Functions", "Serverless containers and functions."],
+          ["GKE", "Managed Kubernetes for container workloads."],
+          ["Firestore & Cloud SQL", "Managed NoSQL and relational options."],
+          ["BigQuery", "Serverless analytics at scale."],
+          ["Operations suite", "Logging, monitoring and tracing."]
+        ],
+        "practice": "One of the three clouds in my toolkit (AWS, Azure and Google Cloud), including Firestore as a data store."
+      },
+      "pt": {
+        "tagline": "Dados, containers e serverless na nuvem do Google.",
+        "overview": "O Google Cloud se destaca em dados, containers e serverless. Considero a plataforma nas decisões de arquitetura ao lado de AWS e Azure, escolhendo a que melhor atende às restrições de cada produto.",
+        "concepts": [
+          ["Projetos e IAM", "Hierarquia de recursos e controle de acesso."],
+          ["Cloud Run e Functions", "Containers e funções serverless."],
+          ["GKE", "Kubernetes gerenciado para workloads em containers."],
+          ["Firestore e Cloud SQL", "Opções gerenciadas NoSQL e relacional."],
+          ["BigQuery", "Analytics serverless em escala."],
+          ["Operations suite", "Logs, monitoramento e tracing."]
+        ],
+        "practice": "Uma das três nuvens do meu repertório (AWS, Azure e Google Cloud), incluindo o Firestore como banco de dados."
+      }
+    },
+    {
+      "slug": "jenkins", "name": "Jenkins", "category": "cloud", "kind": "tool",
+      "usedAt": ["Claro"],
+      "related": ["azure", "aws", "jest"],
+      "en": {
+        "tagline": "Automating the path to production.",
+        "overview": "Jenkins is the classic automation server for CI/CD. I've architected front-end pipelines with it, turning builds, tests and deploys into a repeatable, auditable flow.",
+        "concepts": [
+          ["Pipeline as code", "Declarative Jenkinsfiles versioned with the app."],
+          ["Stages & agents", "Parallel stages and distributed build agents."],
+          ["Quality gates", "Running tests, linting and coverage before deploy."],
+          ["Artifacts", "Building once and promoting the same artifact."],
+          ["Credentials", "Managing secrets safely in pipelines."],
+          ["Plugins & integration", "Integrating SCM, notifications and cloud providers."]
+        ],
+        "practice": "Architected the front-end CI/CD pipeline with Jenkins at Claro, working closely with the DevOps team."
+      },
+      "pt": {
+        "tagline": "Automatizando o caminho até produção.",
+        "overview": "Jenkins é o servidor de automação clássico para CI/CD. Arquitetei pipelines de front-end com ele, transformando build, testes e deploy em um fluxo repetível e auditável.",
+        "concepts": [
+          ["Pipeline como código", "Jenkinsfiles declarativos versionados junto com o app."],
+          ["Stages e agents", "Stages paralelos e agentes de build distribuídos."],
+          ["Quality gates", "Rodar testes, lint e cobertura antes do deploy."],
+          ["Artefatos", "Buildar uma vez e promover o mesmo artefato."],
+          ["Credenciais", "Gerenciar segredos com segurança nos pipelines."],
+          ["Plugins e integrações", "Integrar SCM, notificações e provedores de nuvem."]
+        ],
+        "practice": "Arquitetei o pipeline de CI/CD do front-end com Jenkins na Claro, em parceria próxima com o time de DevOps."
+      }
+    },
+    {
+      "slug": "jest", "name": "Jest", "category": "cloud", "kind": "tool",
+      "usedAt": ["Claro"],
+      "related": ["react", "vuejs", "javascript"],
+      "en": {
+        "tagline": "Confidence through automated tests.",
+        "overview": "Jest is a JavaScript testing framework with a great developer experience. Automated testing is one of the fundamentals I never trade off — including when code is written with AI assistance.",
+        "concepts": [
+          ["Test structure", "describe, it and arrange-act-assert."],
+          ["Matchers", "Expressive assertions for values, objects and errors."],
+          ["Mocks & spies", "Isolating units and controlling dependencies."],
+          ["Async testing", "Testing Promises, timers and async flows."],
+          ["Coverage", "Measuring coverage without chasing vanity metrics."],
+          ["Component testing", "Pairing with Testing Library to test UI behavior."]
+        ],
+        "practice": "Wrote Jest unit tests for logged-in area features at Claro, and enforce automated testing as an architecture standard today."
+      },
+      "pt": {
+        "tagline": "Confiança por meio de testes automatizados.",
+        "overview": "Jest é um framework de testes JavaScript com ótima experiência de desenvolvimento. Testes automatizados são um dos fundamentos dos quais nunca abro mão — inclusive quando o código é escrito com apoio de IA.",
+        "concepts": [
+          ["Estrutura de testes", "describe, it e arrange-act-assert."],
+          ["Matchers", "Asserções expressivas para valores, objetos e erros."],
+          ["Mocks e spies", "Isolar unidades e controlar dependências."],
+          ["Testes assíncronos", "Testar Promises, timers e fluxos assíncronos."],
+          ["Cobertura", "Medir cobertura sem perseguir métricas de vaidade."],
+          ["Testes de componentes", "Junto com a Testing Library para testar comportamento de UI."]
+        ],
+        "practice": "Escrevi testes unitários com Jest para funcionalidades da área logada na Claro e hoje cobro testes automatizados como padrão de arquitetura."
+      }
+    },
+    {
+      "slug": "claude", "name": "Claude Code", "category": "ai", "kind": "tool",
+      "usedAt": ["Stellar Gaming"],
+      "related": ["nodejs", "react", "jest"],
+      "en": {
+        "tagline": "AI Engineering with engineering discipline.",
+        "overview": "Claude Code is Anthropic's agentic coding tool. I use it to accelerate the development lifecycle with Spec-Driven Development, MCP integrations and agents — always grounded in architecture, code review and automated testing.",
+        "concepts": [
+          ["Spec-Driven Development", "Writing clear specs first so the agent builds the right thing."],
+          ["Context engineering", "CLAUDE.md, project memory and giving the model the right context."],
+          ["MCP", "Model Context Protocol to connect tools, data and services."],
+          ["Agents & subagents", "Delegating parallel tasks and orchestrating workflows."],
+          ["RAG & LLMs", "Grounding generative AI in reliable, retrieved knowledge."],
+          ["Guardrails", "Code review, tests and observability to keep quality predictable."]
+        ],
+        "practice": "Drive AI Engineering across the development lifecycle at Stellar Gaming with Claude Code and SDD, and build generative AI solutions with LLMs, RAG and MCP."
+      },
+      "pt": {
+        "tagline": "AI Engineering com disciplina de engenharia.",
+        "overview": "Claude Code é a ferramenta de programação agêntica da Anthropic. Uso para acelerar o ciclo de desenvolvimento com Spec-Driven Development, integrações MCP e agentes — sempre ancorado em arquitetura, code review e testes automatizados.",
+        "concepts": [
+          ["Spec-Driven Development", "Escrever specs claras primeiro para o agente construir a coisa certa."],
+          ["Engenharia de contexto", "CLAUDE.md, memória do projeto e dar ao modelo o contexto certo."],
+          ["MCP", "Model Context Protocol para conectar ferramentas, dados e serviços."],
+          ["Agentes e subagentes", "Delegar tarefas em paralelo e orquestrar workflows."],
+          ["RAG e LLMs", "Ancorar a IA generativa em conhecimento confiável e recuperado."],
+          ["Guardrails", "Code review, testes e observabilidade para manter a qualidade previsível."]
+        ],
+        "practice": "Conduzo a AI Engineering no ciclo de desenvolvimento da Stellar Gaming com Claude Code e SDD, e construo soluções de IA generativa com LLMs, RAG e MCP."
+      }
+    },
+    {
+      "slug": "wordpress", "name": "WordPress", "category": "web", "kind": "tool",
+      "usedAt": ["Tugarê"],
+      "related": ["php", "mysql", "jquery"],
+      "en": {
+        "tagline": "Content-driven sites, delivered fast.",
+        "overview": "WordPress is the world's most popular CMS. I used it to deliver content-driven websites quickly while keeping them customizable through themes and plugins.",
+        "concepts": [
+          ["Themes", "Template hierarchy and building custom themes."],
+          ["Plugins & hooks", "Actions and filters to extend behavior."],
+          ["Custom post types", "Modeling content beyond posts and pages."],
+          ["The Loop & WP_Query", "Fetching and rendering content."],
+          ["Gutenberg", "Block editor and custom blocks."],
+          ["Security & performance", "Updates, hardening and caching."]
+        ],
+        "practice": "Built websites and hotsites with WordPress, PHP and MySQL at Tugarê | CDM São Paulo."
+      },
+      "pt": {
+        "tagline": "Sites orientados a conteúdo, entregues rápido.",
+        "overview": "WordPress é o CMS mais popular do mundo. Usei para entregar sites de conteúdo com agilidade, mantendo a customização por meio de temas e plugins.",
+        "concepts": [
+          ["Temas", "Hierarquia de templates e criação de temas próprios."],
+          ["Plugins e hooks", "Actions e filters para estender comportamento."],
+          ["Custom post types", "Modelar conteúdo além de posts e páginas."],
+          ["The Loop e WP_Query", "Buscar e renderizar conteúdo."],
+          ["Gutenberg", "Editor de blocos e blocos customizados."],
+          ["Segurança e performance", "Atualizações, hardening e cache."]
+        ],
+        "practice": "Construí sites e hotsites com WordPress, PHP e MySQL na Tugarê | CDM São Paulo."
+      }
+    },
+    {
+      "slug": "bootstrap", "name": "Bootstrap", "category": "web", "kind": "tool",
+      "usedAt": ["Tugarê", "Marvin"],
+      "related": ["css3", "jquery", "html5"],
+      "en": {
+        "tagline": "Responsive UI building blocks.",
+        "overview": "Bootstrap is a CSS framework of responsive grid and ready-made components. I used it to ship consistent, responsive interfaces quickly — an early lesson in the value of design systems.",
+        "concepts": [
+          ["Grid system", "Containers, rows, columns and breakpoints."],
+          ["Components", "Navbars, modals, forms and cards."],
+          ["Utilities", "Spacing, display and flex helpers."],
+          ["Theming", "Customizing with Sass variables."],
+          ["Accessibility", "Using components with proper roles and focus handling."],
+          ["When not to use it", "Trade-offs versus custom design systems."]
+        ],
+        "practice": "Used in websites and web systems at Tugarê and in legacy systems at Marvin."
+      },
+      "pt": {
+        "tagline": "Blocos de construção para UI responsiva.",
+        "overview": "Bootstrap é um framework CSS com grid responsivo e componentes prontos. Usei para entregar interfaces consistentes e responsivas com agilidade — uma primeira lição sobre o valor dos design systems.",
+        "concepts": [
+          ["Sistema de grid", "Containers, linhas, colunas e breakpoints."],
+          ["Componentes", "Navbars, modais, formulários e cards."],
+          ["Utilitários", "Helpers de espaçamento, display e flex."],
+          ["Temas", "Customização com variáveis Sass."],
+          ["Acessibilidade", "Usar componentes com roles e foco corretos."],
+          ["Quando não usar", "Trade-offs em relação a design systems próprios."]
+        ],
+        "practice": "Usei em sites e sistemas web na Tugarê e em sistemas legados na Marvin."
+      }
+    },
+    {
+      "slug": "jquery", "name": "jQuery", "category": "web", "kind": "tool",
+      "usedAt": ["Tugarê", "Marvin"],
+      "related": ["javascript", "bootstrap", "php"],
+      "en": {
+        "tagline": "Where interactive web development began for many of us.",
+        "overview": "jQuery simplified DOM manipulation, events and AJAX across browsers. Understanding it is still valuable when maintaining and modernizing legacy front-ends.",
+        "concepts": [
+          ["Selectors", "Finding elements with CSS-like syntax."],
+          ["DOM manipulation", "Changing content, attributes and classes."],
+          ["Events", "Binding, delegation and the event object."],
+          ["AJAX", "Loading data asynchronously."],
+          ["Plugins", "Extending jQuery with reusable behavior."],
+          ["Modernizing", "Migrating from jQuery to native APIs and frameworks."]
+        ],
+        "practice": "Used at Tugarê and Marvin for interactive sites and legacy system maintenance."
+      },
+      "pt": {
+        "tagline": "Onde o desenvolvimento web interativo começou para muitos de nós.",
+        "overview": "jQuery simplificou manipulação do DOM, eventos e AJAX entre navegadores. Entender jQuery ainda é valioso para manter e modernizar front-ends legados.",
+        "concepts": [
+          ["Seletores", "Encontrar elementos com sintaxe parecida com CSS."],
+          ["Manipulação do DOM", "Alterar conteúdo, atributos e classes."],
+          ["Eventos", "Binding, delegação e o objeto de evento."],
+          ["AJAX", "Carregar dados de forma assíncrona."],
+          ["Plugins", "Estender o jQuery com comportamentos reutilizáveis."],
+          ["Modernização", "Migrar de jQuery para APIs nativas e frameworks."]
+        ],
+        "practice": "Usei na Tugarê e na Marvin em sites interativos e na manutenção de sistemas legados."
+      }
+    },
+    {
+      "slug": "cordova", "name": "Cordova", "category": "web", "kind": "tool",
+      "usedAt": ["Resource IT"],
+      "related": ["javascript", "angular", "html5"],
+      "en": {
+        "tagline": "Web technologies, packaged as mobile apps.",
+        "overview": "Apache Cordova wraps HTML, CSS and JavaScript apps into native containers for Android and iOS. I used it to deliver a tablet app with a single web codebase.",
+        "concepts": [
+          ["Hybrid architecture", "A WebView inside a native shell."],
+          ["Plugins", "Accessing device APIs like camera and storage."],
+          ["Platforms", "Building for Android and iOS from one codebase."],
+          ["Offline-first", "Local storage and sync strategies."],
+          ["Performance", "Keeping the WebView fast on tablets."],
+          ["Distribution", "Signing and publishing apps."]
+        ],
+        "practice": "Created a Cordova web app for Android and iOS tablets to manage attendees at local events at Resource IT Solutions."
+      },
+      "pt": {
+        "tagline": "Tecnologias web empacotadas como apps mobile.",
+        "overview": "O Apache Cordova empacota apps em HTML, CSS e JavaScript em containers nativos para Android e iOS. Usei para entregar um app para tablets com uma única base de código web.",
+        "concepts": [
+          ["Arquitetura híbrida", "Uma WebView dentro de um shell nativo."],
+          ["Plugins", "Acessar APIs do dispositivo, como câmera e armazenamento."],
+          ["Plataformas", "Gerar para Android e iOS a partir de um só código."],
+          ["Offline-first", "Armazenamento local e estratégias de sincronização."],
+          ["Performance", "Manter a WebView rápida em tablets."],
+          ["Distribuição", "Assinar e publicar apps."]
+        ],
+        "practice": "Criei na Resource IT Solutions um web app Cordova para tablets Android e iOS para gerenciar participantes em eventos locais."
+      }
+    },
+    {
+      "slug": "photoshop", "name": "Photoshop", "category": "web", "kind": "tool",
+      "usedAt": ["Atento"],
+      "related": ["illustrator", "html5", "css3"],
+      "en": {
+        "tagline": "Where my career started: pixels.",
+        "overview": "Adobe Photoshop is the industry standard for raster image editing. I started my career as a web designer, and that visual foundation still shapes how I build interfaces.",
+        "concepts": [
+          ["Layers & masks", "Non-destructive editing workflows."],
+          ["Image optimization", "Exporting the right format and size for the web."],
+          ["Color & typography", "Visual hierarchy and readable composition."],
+          ["Layout comps", "Designing web layouts before code."],
+          ["Slicing assets", "Preparing graphics for development."],
+          ["Retouching", "Adjustments, filters and smart objects."]
+        ],
+        "practice": "Created layouts, banners and graphic materials as a Web Designer at Atento."
+      },
+      "pt": {
+        "tagline": "Onde minha carreira começou: pixels.",
+        "overview": "O Adobe Photoshop é o padrão da indústria para edição de imagens raster. Comecei a carreira como web designer, e essa base visual ainda orienta como construo interfaces.",
+        "concepts": [
+          ["Camadas e máscaras", "Fluxos de edição não destrutivos."],
+          ["Otimização de imagens", "Exportar no formato e tamanho certos para a web."],
+          ["Cor e tipografia", "Hierarquia visual e composição legível."],
+          ["Layouts", "Desenhar layouts web antes do código."],
+          ["Recorte de assets", "Preparar gráficos para o desenvolvimento."],
+          ["Retoque", "Ajustes, filtros e smart objects."]
+        ],
+        "practice": "Criei layouts, banners e materiais gráficos como Web Designer na Atento."
+      }
+    },
+    {
+      "slug": "illustrator", "name": "Illustrator", "category": "web", "kind": "tool",
+      "usedAt": ["Atento"],
+      "related": ["photoshop", "css3"],
+      "en": {
+        "tagline": "Vector graphics with precision.",
+        "overview": "Adobe Illustrator is the standard for vector graphics. I used it for logos, icons and graphic materials — knowledge that helps me work closely with designers today.",
+        "concepts": [
+          ["Vectors & paths", "Anchor points, the pen tool and shapes."],
+          ["Artboards", "Organizing multiple assets in one file."],
+          ["Typography", "Working with type as shapes and outlines."],
+          ["Color", "Swatches, global colors and CMYK vs RGB."],
+          ["SVG export", "Clean, optimized vectors for the web."],
+          ["Icon design", "Grids, consistency and pixel alignment."]
+        ],
+        "practice": "Created layouts, banners and graphic materials with Illustrator as a Web Designer at Atento."
+      },
+      "pt": {
+        "tagline": "Gráficos vetoriais com precisão.",
+        "overview": "O Adobe Illustrator é o padrão para gráficos vetoriais. Usei para logos, ícones e materiais gráficos — conhecimento que hoje me ajuda a trabalhar lado a lado com designers.",
+        "concepts": [
+          ["Vetores e paths", "Pontos de ancoragem, pen tool e formas."],
+          ["Pranchetas", "Organizar vários assets em um arquivo."],
+          ["Tipografia", "Trabalhar texto como formas e contornos."],
+          ["Cor", "Amostras, cores globais e CMYK vs RGB."],
+          ["Exportar SVG", "Vetores limpos e otimizados para a web."],
+          ["Design de ícones", "Grids, consistência e alinhamento ao pixel."]
+        ],
+        "practice": "Criei layouts, banners e materiais gráficos com Illustrator como Web Designer na Atento."
+      }
+    }
+  ]
+}

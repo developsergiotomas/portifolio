@@ -3,36 +3,38 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^5.17.0",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
+    "next": "^16.4.0",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "prepare": "panda codegen",
+    "dev": "panda codegen && next dev",
+    "build": "panda codegen && next build",
+    "start": "npx serve out",
+    "test": "panda codegen && vitest run",
+    "typecheck": "panda codegen && tsc --noEmit",
+    "deploy": "pnpm build && wrangler pages deploy",
+    "preview": "pnpm build && wrangler pages dev"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+  "devDependencies": {
+    "@pandacss/dev": "^2.1.2",
+    "@pandacss/preset-base": "2.1.2",
+    "@pandacss/preset-panda": "2.1.2",
+    "@testing-library/jest-dom": "^7.0.1",
+    "@testing-library/react": "^16.3.3",
+    "@testing-library/user-event": "^14.6.7",
+    "@types/node": "^26.6.4",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.2",
+    "jsdom": "^30.1.2",
+    "typescript": "^5.9.3",
+    "vitest": "^5.0.3",
+    "wrangler": "^4.148.0"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "packageManager": "pnpm@11.24.0",
+  "engines": {
+    "node": ">=20.9"
   }
 }

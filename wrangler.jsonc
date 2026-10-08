@@ -1,0 +1,8 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  // Cloudflare Pages project (Git-connected, serves sergiotomas.dev).
+  "name": "portifolio",
+  "compatibility_date": "2026-10-08",
+  // Static export from `next build` (output: 'export').
+  "pages_build_output_dir": "./out"
+}
