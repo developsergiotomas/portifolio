@@ -2,9 +2,10 @@ import { detectLang } from '../i18n/detect'
 import { alternates } from '../i18n/metadata'
 
 describe('detectLang', () => {
-  it('picks Portuguese for any pt locale', () => {
+  it('respects the browser preference order', () => {
     expect(detectLang(['pt-BR', 'en'])).toBe('pt')
-    expect(detectLang(['en-US', 'pt'])).toBe('pt')
+    expect(detectLang(['en-US', 'en-BR', 'pt-BR'])).toBe('en')
+    expect(detectLang(['es-ES', 'pt-PT', 'en'])).toBe('pt')
   })
 
   it('falls back to English', () => {
