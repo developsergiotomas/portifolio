@@ -53,3 +53,12 @@ describe('messages', () => {
     }
   })
 })
+
+describe('cache headers', () => {
+  it('caches fingerprinted build output forever and leaves HTML on Pages defaults', async () => {
+    const { readFileSync } = await import('node:fs')
+    const headers = readFileSync(join(process.cwd(), 'public/_headers'), 'utf8')
+    expect(headers).toMatch(/^\/_next\/static\/\*\n {2}Cache-Control: public, max-age=31536000, immutable$/m)
+    expect(headers).not.toMatch(/^\/\*$/m)
+  })
+})
