@@ -1,14 +1,24 @@
 # Cloudflare Pages response headers (https://developers.cloudflare.com/pages/configuration/headers/).
-# HTML, llms*.txt, sitemap and CVs keep the Pages default (max-age=0 + ETag) so every deploy shows up immediately.
+#
+# Browsers: HTML keeps Pages' default `max-age=0, must-revalidate` (ETag revalidation).
+# Edge: CDN-Cache-Control is read by Cloudflare only, so HTML, RSC payloads, llms*.txt,
+# sitemap and CVs are served from the edge for 5 minutes and refreshed in the background.
+# A new deploy is therefore visible everywhere within ~5 minutes.
+/*
+  CDN-Cache-Control: max-age=300, stale-while-revalidate=3600
 
 # Content-hashed build output (JS, CSS, fonts): the URL changes when the content does.
 /_next/static/*
+  ! CDN-Cache-Control
   Cache-Control: public, max-age=31536000, immutable
 
 # Logos, profile photo and favicon: not fingerprinted, rarely change.
 /tech/*
+  ! CDN-Cache-Control
   Cache-Control: public, max-age=86400, stale-while-revalidate=604800
 /profile.jpg
+  ! CDN-Cache-Control
   Cache-Control: public, max-age=86400, stale-while-revalidate=604800
 /favicon.ico
+  ! CDN-Cache-Control
   Cache-Control: public, max-age=86400, stale-while-revalidate=604800

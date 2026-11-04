@@ -55,10 +55,12 @@ describe('messages', () => {
 })
 
 describe('cache headers', () => {
-  it('caches fingerprinted build output forever and leaves HTML on Pages defaults', async () => {
+  it('caches hashed assets forever and HTML only briefly at the edge', async () => {
     const { readFileSync } = await import('node:fs')
     const headers = readFileSync(join(process.cwd(), 'public/_headers'), 'utf8')
-    expect(headers).toMatch(/^\/_next\/static\/\*\n {2}Cache-Control: public, max-age=31536000, immutable$/m)
-    expect(headers).not.toMatch(/^\/\*$/m)
+    const rule = (path: string) => headers.split(/\n(?=\S)/).find((r) => r.startsWith(`${path}\n`)) ?? ''
+    expect(rule('/*')).toMatch(/CDN-Cache-Control: max-age=300/)
+    expect(rule('/*')).not.toMatch(/^ {2}Cache-Control/m)
+    expect(rule('/_next/static/*')).toMatch(/! CDN-Cache-Control\n {2}Cache-Control: public, max-age=31536000, immutable/)
   })
 })
