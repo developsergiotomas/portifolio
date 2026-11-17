@@ -2,7 +2,7 @@ import type { Metadata, Viewport } from 'next'
 import { notFound } from 'next/navigation'
 import type { ReactNode } from 'react'
 import { isLang, LANGS, messages } from '../../i18n/messages'
-import { alternates, htmlLang, SITE_URL } from '../../i18n/metadata'
+import { alternates, htmlLang, SITE_URL, SITE_VERIFICATION } from '../../i18n/metadata'
 import { fontVariables } from '../fonts'
 import '../globals.css'
 
@@ -26,6 +26,7 @@ export async function generateMetadata({ params }: Omit<Props, 'children'>): Pro
     openGraph: { type: 'website', locale: lang === 'pt' ? 'pt_BR' : 'en_US', title: meta.title, description: meta.description, images: ['/profile.jpg'] },
     manifest: '/manifest.json',
     authors: [{ name: 'Sergio Tomas', url: SITE_URL }],
+    verification: SITE_VERIFICATION,
     twitter: { card: 'summary', title: meta.title, description: meta.description, images: ['/profile.jpg'] },
   }
 }
